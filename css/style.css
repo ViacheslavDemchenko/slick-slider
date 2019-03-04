@@ -1,4 +1,4 @@
-body {
+/*body {
   height: 200vh;
 }
 
@@ -64,6 +64,145 @@ figcaption p {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.slick-prev-thumb,
+.slick-next-thumb {
+    font-size: 0;
+    line-height: 0;
+    position: relative;
+    display: block;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.slick-prev-thumb::before,
+.slick-next-thumb::before {
+  position: absolute;
+  z-index: 2000;
+  width: 33px;
+  height: 33px;
+  display: block;
+}
+
+.slick-prev-thumb::before {
+  content: url(../img/icons/thumb-arrow--left.svg);
+  top: 55px;
+  left: 15px;
+}
+
+.slick-next-thumb::before {
+  content: url(../img/icons/thumb-arrow--right.svg);
+  left: 685px;
+  bottom: 55px;
+}
+
+.content {
+  font-size: 18px;
+  padding: 20px;
+  text-align:center;
+  color: white;
+}
+.one {
+  background: blue;
+}
+.two {
+  background: red;
+}
+.three {
+  background: purple;
+}
+.four {
+  background: green;
+}
+.five {
+  background: pink;
+}
+.two, .three, .four, .five {
+  display:none;
+}
+*/
+
+
+body {
+  height: 200vh;
+}
+
+.slider-container {
+  position: relative;
+  width: 730px;
+  height: 550px;
+  margin: auto;
+  background-color: #575757;
+}
+
+.slider div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+figcaption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 0;
+  font-family: MyriadPro;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  color: #fff;
+  background-color: rgba(6,7,7,0.34);
+}
+
+figcaption p {
+  margin: 0;
+  padding-left: 10px;
+  float: left;
+}
+
+.slider {
+  overflow: hidden;
+  background-color: #575757;
+}
+
+.slick-slide{
+  text-align: center;
+}
+
+.slider-nav-thumbnails .slick-slide.slick-active {
+  opacity: 1;
+}
+
+.slider-nav-thumbnails {
+  width: 730px;
+  background-color: #575757;
+}
+
+.slider-nav-thumbnails div {
+  background-color: #575757;
+  margin: 3px;
+  -webkit-box-shadow: 0px 1px 9px 1px rgba(2,2,2,0.4);
+          box-shadow: 0px 1px 9px 1px rgba(2,2,2,0.4);
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .slick-prev-thumb,
