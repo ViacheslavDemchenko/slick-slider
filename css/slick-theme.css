@@ -23,7 +23,7 @@
     line-height: 0;
 
     position: absolute;
-    z-index: 2000;
+    z-index: -1;
     top: 50%;
 
     display: block;
@@ -206,4 +206,12 @@
 {
     opacity: .75;
     color: black;
+}
+
+.slider-container:hover .slick-next {
+    z-index: 2000;
+}
+
+.slider-container:hover .slick-prev {
+    z-index: 2000;
 }
