@@ -59,52 +59,49 @@ figcaption p {
   margin: 3px;
   -webkit-box-shadow: 0px 1px 9px 1px rgba(2,2,2,0.4);
           box-shadow: 0px 1px 9px 1px rgba(2,2,2,0.4);
-/*  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;*/
 }
 
-.slick-prev-thumb,
-.slick-next-thumb {
-    font-size: 0;
-    line-height: 0;
-    position: relative;
-    display: block;
-    padding: 0;
-    border: none;
-    outline: none;
-    background: transparent;
-    cursor: pointer;
-}
-
-.slick-prev-thumb::before,
-.slick-next-thumb::before {
-  position: absolute;
+.prev-thumb,
+.next-thumb {
+  position: relative;
   z-index: 2000;
+  width: 33px;
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.prev-thumb {
+  top: 55px;
+  left: 15px;
+}
+
+.next-thumb {
+  top: -85px;
+  left: 680px;
+}
+
+.prev-thumb::before,
+.next-thumb::before {
+  position: absolute;
+  content: "";
+  z-index: 2000;
+  top: 0;
   width: 33px;
   height: 33px;
   display: block;
 }
 
-.slick-prev-thumb::before {
-  content: url(../img/icons/thumb-arrow--left.svg);
-  top: 55px;
-  left: 15px;
+.prev-thumb::before {
+  background-image: url(../img/icons/thumb-arrow--left.svg);
 }
 
-.slick-next-thumb::before {
-  content: url(../img/icons/thumb-arrow--right.svg);
-  left: 685px;
-  bottom: 55px;
+.next-thumb::before {
+  background-image: url(../img/icons/thumb-arrow--right.svg);
 }
 
 .content {

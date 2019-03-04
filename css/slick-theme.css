@@ -89,7 +89,7 @@
 }
 .slick-prev:before
 {
-    z-index: 100;
+    z-index: 2000;
     content: url(../img/icons/slider-arrow--left.png);
 }
 [dir='rtl'] .slick-prev:before
@@ -108,7 +108,7 @@
 }
 .slick-next:before
 {
-    z-index: 100;
+    z-index: 2000;
     content: url(../img/icons/slider-arrow--right.png);
 
 }

@@ -17,8 +17,8 @@
  	focusOnSelect: true,
  	arrows: true,
  	infinite: true,
- 	prevArrow: '<button type="button" class="slick-arrow slick-prev-thumb"><span>Previous</span></button>',
- 	nextArrow: '<button type="button" class="slick-arrow slick-next-thumb"><span>Previous</span></button>'
+ 	prevArrow: '<span type="button" class="prev-thumb"><span>Previous</span></span>',
+ 	nextArrow: '<span type="button" class="next-thumb"><span>Previous</span></span>'
  });
 
  //remove active class from all thumbnail slides
